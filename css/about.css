@@ -1,0 +1,49 @@
+html{
+    background-image: url("../img/bg2.jpg");
+}
+
+.skills{
+    padding: 40px;
+    text-align: left;
+    background-color: #5AF6AE;
+    width: 200px;
+    margin: 20px;
+}
+
+.skills li{
+    list-style: filled-circle;
+}
+
+.stats{
+    padding: 40px;
+    text-align: right;
+    background-color: #58F8FC;
+    position: absolute;
+    transform: translateX(100%) translateY(-95%);
+    width: 500px;
+    margin: 20px;
+}
+
+.technologies{
+    padding: 40px;
+    text-align: left;
+    background-color: #DF9F8F;
+    width: 200px;
+    margin: 20px;
+}
+
+.technologies li{
+    list-style: filled-circle;
+}
+
+.edu{
+    padding: 40px;
+    text-align: right;
+    background-color: #FFCC7D;
+    position: absolute;
+    transform: translateX(315%) translateY(-150%);
+    width: 200px;
+    margin: 20px;
+}
+
+

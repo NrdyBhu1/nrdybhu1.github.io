@@ -1,0 +1,209 @@
+/*@import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic);@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i");@font-face{font-family:"cubanoregular";src:url("../fonts/cubano-regular-webfont.woff2") format("woff2"),url("../fonts/cubano-regular-webfont.woff") format("woff");font-weight:normal;font-style:normal}.highlight .hll{background-color:#ffc}.highl*/
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i");
+
+@font-face {
+    font-family: "cubanoregular";
+    src: url("assets/Cubano-Regular.woff") format("woff"), url("assets/Cubano-Regular.ttf") format("ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "cubanoregular";
+}
+
+html {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html::selection {
+    background-color: #79FC90;
+}
+
+a {
+    text-decoration: none;
+    color: teal;
+    transition: 0.5s linear;
+}
+
+a:hover {
+    color: white;
+    background-color: teal;
+}
+
+.main-header {
+    margin: 20px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.main-header:hover {
+    background: none;
+}
+
+.content {
+    text-align: center;
+    align-content: center;
+}
+
+.links img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.main-before {
+    font-size: 80px;
+}
+
+/* .main-before::after{
+    content: "";
+    animation: mainanim 10s linear infinite;
+    font-size: 200px;
+} */
+
+.main{
+    font-size: 200px;
+}
+
+.main::after {
+    content: "|";
+    animation: type 5s linear infinite;
+}
+
+@keyframes type {
+    0%{
+        content: "|";
+    }
+
+    10% {
+        content: "N|";
+    }
+
+    20%{
+        content: "Nr|";
+    }
+
+    30%{
+        content: "Nrd|";
+    }
+    
+    40%{
+        content: "Nrdy|";
+    }
+
+    50%{
+        content: "NrdyB|";
+    }
+
+    60%{
+        content: "NrdyBh|";
+    }
+
+    70%{
+        content: "NrdyBhu|";
+    }
+
+    80%{
+        content: "NrdyBhu1|";
+    }
+}
+
+.nav li {
+    list-style: none;
+    display: inline;
+}
+
+.nav a {
+    font-size: 40px;
+    padding: 10px;
+    color: #A7DADA;
+}
+
+.nav .current {
+    text-shadow: 4px 4px 4px #EEEADB, -4px -4px 4px #EEEADB, -4px 4px 4px #EEEADB, 4px -4px 4px #EEEADB;
+}
+
+.nav .current:hover::after {
+    content: "";
+}
+
+.nav .current:hover::before {
+    content: "";
+}
+
+.projects {
+    margin: 10px;
+}
+
+.project {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    background-color: teal;
+    border-radius: 5px;
+}
+
+.project-name {
+    font-size: 25px;
+    padding: 2px;
+}
+
+.project-name a {
+    color: black;
+}
+
+.project-name a:hover {
+    color: #EFFF4B;
+    background: none;
+}
+
+.project-name a:hover::after {
+    content: "";
+}
+
+.project img {
+    width: 400px;
+    height: auto;
+}
+
+.nav a:hover {
+    background: none;
+}
+
+.nav a:hover::after {
+    content: "]";
+}
+
+.nav a:hover::before {
+    content: "[";
+}
+
+.links img:hover {
+    transform: translateY(5px);
+    color: red;
+}
+
+.links a:hover {
+    background: none;
+}
+
+footer {
+    text-align: center;
+    font-size: 25px;
+    cursor: default;
+}
+
+@media screen and (max-width: 980px) {}
